@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza</title>
+  <link href="css/CssZadani2.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("Изображения/pizza.png");
+      background-repeat: no-repeat;
+      min-height: 100%;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <h1> Выбирите пиццу для заказа </h1>
+</center>
+<center>
+<h3>  Ввыдите данные заказа </h3>
+</center>
+<center>
+  <form action="">
+    <fieldset>
+      <legend align="left"> Заказ </legend>
+      <table>
+        <tr>
+          <td><label for="nameauthor">Введите Название пиццы: </label> </td>
+          <td><input id="nameauthor" type="text" placeholder="Пицца"></td>
+        </tr>
+        <tr>
+          <td><label for="namebook">Введите адрес доставки </label> </td>
+          <td><input id="namebook" type="text" placeholder="Адрес"></td>
+        </tr>
+        <tr>
+          <td><label for="namepublish">Выберете способ доставки: </label> </td>
+          <td><select id="namepublish">
+            <option value="1">День в день</option>
+            <option value="2">Экспресс</option>
+            <option value="3">На следующий день</option>
+            <option value="4">Заранее</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td><label for="binder">Салфетки нужны? </label> </td>
+          <td><input id="binder" type="radio" name="radiochoise_type" value="1"/><label>Да</label><br>
+            <input type="radio" name="radiochoise_type" value="2"/><label>Нет</label><br></td>
+        </tr>
+        <tr>
+          <td><label for="mail">Введите почту: </label> </td>
+          <td><input id="mail" type="email" placeholder="Почта"></td>
+        </tr>
+        <tr>
+          <td class="MyLefttable"><label>Дата рождения</label></td><td class="MyRighttable"><input type="date" name="date" /></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Введите телефон: </label> </td>
+          <td><input id="phone" type="text" placeholder="Телефон"></td>
+        </tr>
+        <tr>
+          <td><label for="comment">Введите комментарий к заказу: </label> </td>
+          <td><textarea id="comment" name="" cols="100" placeholder="Комментарий"></textarea></td>
+        </tr>
+      </table>
+      <button type="submit">Купить</button>
+    </fieldset>
+  </form>
+</center>
+
+</body>
+</html>
